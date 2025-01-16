@@ -16,7 +16,7 @@ Käyttöjärjestelmä: Windows 11 23h2
 
 Aloitin tehtävän asentamalla uusimman Debian ISO tiedoston debian-live-12.9.0-amd64-xfce.iso sivustolta https://www.debian.org/CD/live/ klikkaamalla "Live Xfce"-linkkiä. Tiedoston koko oli 3,0 Gt, ja sen lataukseen meni alle minuutti. Virtualisointiohjelmistona tehtävää tehdessä toimi VirtualBox, sillä se oli etukäteen ladattuna host-koneelleni. Debian ISO tiedoston latauksen jälkeen avasin VirualBoxin ja aloitin uuden virtuaalikoneen luonnin Ctrl+N komennolla. Avautuvassa ikkunassa valitsin alla olevien kuvien mukaiset valinnat, ja klikkasin "Finish".
 
-![Add file: Upload](debian-name-and-os.png)
+![Add file: Upload](debian-name-and-operating-system.png)
 
 ![Add file: Upload](debian-hardware.png)
 
