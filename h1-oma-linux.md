@@ -1,5 +1,5 @@
-# Oma linux
-
+# Harjoitus 1: Oma linux
+Kurssi: Linux palvelimet https://terokarvinen.com/linux-palvelimet/ \
 Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h1-oma-linux
 
 ## Raportin kirjoittaminen
@@ -14,7 +14,7 @@ Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h1-oma-linux
 Tietokone: Lenovo Legion Y540-15IRH\
 Käyttöjärjestelmä: Windows 11 23h2
 
-Aloitin tehtävän asentamalla uusimman Debian ISO tiedoston debian-live-12.9.0-amd64-xfce.iso sivustolta https://www.debian.org/CD/live/ klikkaamalla "Live Xfce"-linkkiä. Tiedoston koko oli 3,0 Gt, ja sen lataukseen meni alle minuutti. Virtualisointiohjelmistona tehtävää tehdessä toimi VirtualBox, sillä se oli etukäteen ladattuna host-koneelleni. Debian ISO tiedoston latauksen jälkeen avasin VirualBoxin ja aloitin uuden virtuaalikoneen luonnin Ctrl+N komennolla. Avautuvassa ikkunassa valitsin alla olevien kuvien mukaiset valinnat, ja klikkasin "Finish".
+Aloitin tehtävän asentamalla uusimman Debian ISO tiedoston debian-live-12.9.0-amd64-xfce.iso sivustolta https://www.debian.org/CD/live/ klikkaamalla "Live Xfce"-linkkiä. Tiedoston koko oli 3,0 Gt, ja sen lataukseen meni alle minuutti. Virtualisointiohjelmistona tehtävää tehdessä toimi VirtualBox, sillä se oli etukäteen ladattuna host-koneelleni. Debian ISO tiedoston latauksen jälkeen avasin VirualBoxin ja aloitin uuden virtuaalikoneen luonnin Ctrl+N komennolla. Avautuvassa ikkunassa valitsin alla olevien kuvien mukaiset valinnat ja klikkasin "Finish".
 
 ![Add file: Upload](debian-name-and-operating-system.png)
 
@@ -23,8 +23,6 @@ Aloitin tehtävän asentamalla uusimman Debian ISO tiedoston debian-live-12.9.0-
 ![Add file: Upload](debian-hard-disk.png)
 
 Avasin virtuaalikoneen tuplaklikkaamalla luomaani virtuaalikonetta. Hetken kuluttua bootloader-valikko avautui ja valitsin "Live system (amd64)"-valinnan painamalla enter-näppäintä. Avautui työpöytä jossa kokeilin heti koneen toimivuutta avaamalla selaimena ja Youtube-videon. Näin sain selville ainakin hiiren, näppäimistön, internet-yhteyden, kuvan ja äänen toimivuuden. 
-
-## Debian asennus
 
 Jatkoin työpöydälle ja avasin Calamares Debian GNU/Linux Installerin tuplaklikkaamalla "Install Debian"-kuvaketta. 
 
@@ -39,4 +37,8 @@ Jatkoin työpöydälle ja avasin Calamares Debian GNU/Linux Installerin tuplakli
 
 Kone käynnistyi uudelleen, joka vei muutaman minuutin. Uudelleenkäynnistyksen jälkeen kirjauduin sisään luomallani käyttäjätunnuksella ja salasanalla. Lopuksi vielä varmistin uudelleen järjestelmän toimivuuden selaamalla nettiä ja katsomalla Youtube-videota.
 
+## Lähteet
+Raportin kirjoittaminen: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ \
+Free software: https://www.gnu.org/philosophy/free-sw.html \
+Debian ISO image: https://www.debian.org/CD/live/ \
 Asennuksessa käytetyt ohjeet: https://terokarvinen.com/2021/install-debian-on-virtualbox/
