@@ -9,13 +9,12 @@ Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h1-oma-linux
 ## Free software
 - Free software, suomeksi vapaa ohjelmisto, on ohjelmisto jonka käyttäjällä on laajemmat vapaudet verrattuna normaaliin ohjelmistoon.
 - Vapaan ohjelmiston tunnistaa neljästä keskeisestä piirteestä: 1. Vapaus ajaa koodia niin kuin itse haluaa. 2. Vapaus tutkia lähdekoodia ja muokata sitä. 3. Vapaus levittää kopioita ohjelmasta. 4. Vapaus levittää muokattuja kopioita ohjelmasta.
-- 
 
 ## Linuxin asentaminen virtuaalikoneeseen
 Tietokone: Lenovo Legion Y540-15IRH 
 Käyttöjärjestelmä: Windows 11 23h2
 
-Aloitin tehtävän asentamalla uusimman Debian ISO tiedosto 
+Aloitin tehtävän asentamalla uusimman Debian ISO tiedoston. Virtualisointiohjelmistona tehtävää tehdessä toimi VirtualBox, sillä se olin sen aiemmin ladannut.
 
 
 
