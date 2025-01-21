@@ -12,4 +12,4 @@ Tietokone: Lenovo Legion Y540-15IRH kannettava kytkettynä langallisesti kotiver
 Käyttöjärjestelmä: Windows 11 23H2
 
 Virtualisointiympäristö: VirtualBox Version 7.1.4. Käyttöjärjestelmänä toimii Debian 12 Bookworm käyttäen alla olevan kuvan mukaisia VirtualBox-asetuksia.\
-![Add file: Upload](kuva)
+![Add file: Upload](virtualbox-asetukset.png)
