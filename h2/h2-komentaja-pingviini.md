@@ -33,7 +33,7 @@ Jonka jälkeen komenotkehote pyysi varmistusta sovelluksen poistoon. Varmistin p
 Nyt kun vanha asennus sovelluksesta oli poistettu, voitiin Micro-editorin asentaminen aloittaa uudelleen nollasta. Sovelluksen asentamiseksi paketinhallintaohjelmalla syötin alla olevan komennon, jonka jälkeen sudo-oikeuksiin vaaditun käyttäjätilin salasana.
 
     sudo apt-get install micro
-Tässä kohtaa törmäsin ensimmäisiin virheilmoituksiin (seuraavassa kuvassa). Aloitin virheilmoitusten tutkimisen avaamalla selaimen ja kopioimalla ne Googleen. Silmäilin muutaman ehdotetun artikkelin, joissa kaikissa lueteltiin pitkä lista keinoja virheen korjaamiseksi. Ennen vian syvempää tutkimista päätin vielä yrittää komentoa uudelleen, jolloin se toimi moitteettomasti. Ensimmäisen ja toisen yrityksen välillä oli aikaa ehtinyt kulua noin 4 minuuttia.
+Tässä kohtaa törmäsin ensimmäisiin virheilmoituksiin (seuraavassa kuvassa). Aloitin virheilmoitusten tutkimisen avaamalla virtuaalikoneen selaimen ja kopioimalla ne Googleen. Silmäilin muutaman ehdotetun artikkelin, joissa kaikissa lueteltiin pitkä lista keinoja virheen korjaamiseksi. Ennen vian syvempää tutkimista päätin vielä yrittää komentoa uudelleen, jolloin se toimi moitteettomasti. Ensimmäisen ja toisen yrityksen välillä oli aikaa ehtinyt kulua noin 4 minuuttia.
 
 ![image](https://github.com/user-attachments/assets/6129ed43-28e9-479b-93e1-5078c38f7b8e)
 
