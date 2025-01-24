@@ -3,6 +3,9 @@ Kurssi: Linux palvelimet https://terokarvinen.com/linux-palvelimet/ \
 Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini
 
 ## Komentorivin perusteet
+- Komentokehote on tehokas, kätevä ja nopea tapa hallita Linuxia.
+- Komentokehotteessa toimitaan aina hakemistoissa. Hakemistopuuta navigoidessa hyödyllisimpiä komentoja ovat 'pwd', 'ls' ja 'cd'.
+- Minimum privilege -periaate, eli tulisi aina käyttää pienimpiä mahdollisia oikeuksia komentojen suorittamiseen.
 
 ## Suoritusympäristö
 Tietokone: Lenovo Legion Y540-15IRH kannettava kytkettynä langallisesti kotiverkkoon.\
@@ -46,3 +49,25 @@ Tiedosto avautui Micro-editorissa, kirjoitin kolme riviä tekstiä ja poistuin C
     ls
     micro testi.txt
 Tiedosto oli tallentunut oikein, joten poistuin editorista edellä mainitulla tavalla. Näin sain varmistettua ainakin tiedostojen luonnin, avaamisen ja sisällön muokkaamisen ja tallentamisen toiminnan sovelluksessa.
+
+## Apt
+Asensin htop, 2048 ja figlet ohjelmat samanaikaisesti käyttäen alla olevaa komentoa ja hyväksymällä lataukset.
+
+        sudo apt-get install htop 2048 figlet
+Htop toimii kuin komentokehoitteen sisäänrakennettu top komento, mutta on hieman selkeämpi. Kaikessa yksinkertaisuudessaan se näyttää käynnissä olevat prosessit ja käytetyt resurssit. 
+
+![image](https://github.com/user-attachments/assets/59926caf-542b-4881-b107-2d63c8f291b2)
+
+Sovelluksesta poistutaan Ctrl+C.
+
+2048 peli on tuotu myös komentokehoitteelle. Pelin tarkoitus on yhdistellä saman numeroisia neliöitä 4x4 aluella, samalla kasvatten laatikoiden sisällä olevia numeroita. 
+
+![image](https://github.com/user-attachments/assets/c30225cb-933c-4d0b-97d7-39724db0e2a4)
+
+Neliöiden liikutus toimii nuolinäppäimillä. Pelin voittaa kun saa muodostettua laatikon 2048 numerolla ja häviää kun alue täyttyy niin, että laatikoita ei pysty enää yhdistelemään.
+
+![image](https://github.com/user-attachments/assets/80ea953f-e475-4c9e-a6d7-3f55a4c784de)
+
+Figlet on sovellus, joka muuttaa sille annetun tekstin suureksi ASCII tekstiksi.
+
+![image](https://github.com/user-attachments/assets/cdd70182-1dc8-493e-bfb5-fc7ea0743c20)
