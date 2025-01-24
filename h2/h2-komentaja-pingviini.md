@@ -102,7 +102,8 @@ Muita tärkeitä kansioita ovat:
 - /media/, joka sisältää järjestelmään yhdistetyt ulkoiset mediat, kuten cd-aseman tai muistikortin.
 - /var/log/, joka sisältää lokit. Esim apt-loki:
     ![image](https://github.com/user-attachments/assets/ac307c1c-ce06-48ee-88ee-5db6af6325a4)
-    ![image](https://github.com/user-attachments/assets/db1ca774-6b8c-4c65-81cd-d9f6ba1a3e16)
+    ![image](https://github.com/user-attachments/assets/174315ce-8f96-482c-ba89-598fa85629fa)
+
 
     
 
