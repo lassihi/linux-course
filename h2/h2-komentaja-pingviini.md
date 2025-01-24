@@ -71,3 +71,38 @@ Neliöiden liikutus toimii nuolinäppäimillä. Pelin voittaa kun saa muodostett
 Figlet on sovellus, joka muuttaa sille annetun tekstin suureksi ASCII tekstiksi.
 
 ![image](https://github.com/user-attachments/assets/cdd70182-1dc8-493e-bfb5-fc7ea0743c20)
+
+## FHS
+
+Juurihakemisto sisältää kaikki muut järjestelmässä olevat kansiot ja tiedostot. Siirrytään kansioon ja listataan sen sisältö komennoilla
+
+    cd /
+    ls
+![image](https://github.com/user-attachments/assets/7e3c3bcd-94ac-4ca3-9e4b-88fd680c0b8b)
+
+Juurihakemistossa sijaitsee kansio home, jossa sijaitsee koneen kaikkien käyttäjien kotihakemistot. Siirrytään juurihakemistosta home-kansioon ja tulostetaan sen sisältö.
+
+    cd home/
+    ls
+![image](https://github.com/user-attachments/assets/4b2f0da3-4976-47ee-b97a-9d7fb0f8a919)
+
+Home-kansiossa sijaitsee kansio lassihi, joka on käyttäjän lassihi kotihakemisto. Jos koneella olisi muita käyttäjiä, niin käyttäjät olisivat näkyneet tässä. Käyttäjän kotihakemisto on ainoa paikka mihin käyttäjä voi säiyttää dataa. Siirrytään käyttäjän lassihi kotihakemistoon ja listataan sen sisältö. Avataan myös hakemistossa oleva kansio ja kurkataan sen sisälle.
+
+    cd lassihi/
+    ls
+    cd Documents/
+    ls
+![image](https://github.com/user-attachments/assets/1f186b64-bfa5-4d38-b8b6-ef6573d51afb)
+
+Muita tärkeitä kansioita ovat:
+- /etc/, joka sisältää asetukset. Esim firefox-esr asetukset:
+    ![image](https://github.com/user-attachments/assets/0a46e27b-9479-453a-989f-14527e0911fb)
+    ![image](https://github.com/user-attachments/assets/6dd4e4ee-acb2-43e0-85d9-23ac551d9e67)
+ 
+- /media/, joka sisältää järjestelmään yhdistetyt ulkoiset mediat, kuten cd-aseman tai muistikortin.
+- /var/log/, joka sisältää lokit. Esim apt-loki:
+    ![image](https://github.com/user-attachments/assets/ac307c1c-ce06-48ee-88ee-5db6af6325a4)
+    ![image](https://github.com/user-attachments/assets/db1ca774-6b8c-4c65-81cd-d9f6ba1a3e16)
+
+    
+
