@@ -104,6 +104,32 @@ Muita tärkeitä kansioita ovat:
     ![image](https://github.com/user-attachments/assets/ac307c1c-ce06-48ee-88ee-5db6af6325a4)
     ![image](https://github.com/user-attachments/assets/174315ce-8f96-482c-ba89-598fa85629fa)
 
+## Grep
+Grep-komento mahdollistaa rivien hakemisen ja suodattamisen hakusanan tai lausekkeen avulla. Yleinen käyttötarkoitus merkkijonon sisältävän rivin hakeminen tiedostosta. Alla olevassa kuvassa haetaan Documents hakemistossa olevasta tiedostosta "testi.txt" rivit, jotka sisältävät merkkijonon "rivi". 
 
-    
+![image](https://github.com/user-attachments/assets/9b20d8d0-03a3-479c-904f-9a10ed5df3c7)
 
+Kuten useisiin muihin komentoihin, niin grep-komentoihin voidaan lisätä optioita, jotka ovat lisäohjeita. Esimerkiksi optio -w hakee vain rivit, joissa on merkkijonoa vastaava sana. Usein optio -n on hyödyllinen, sillä se lisää tulosteeseen rivinumerot. Tein edellisen kuvan mukaisen komennon uudelleen tällä kertaa hyödyntäen edellä näytettyjä optioita.
+
+![image](https://github.com/user-attachments/assets/fefc2565-b037-42a5-8032-f4baf7603a44)
+
+## Pipe
+Putket "|" mahdollistavat komentojen ketjuttamiseen komentorivillä niin, että ennen putkea olevan komennon tulosteesta tulee putken jälkeen olevan komennon syöte. Esimerkkinä listasin koti-hakemistoni kansiot, jonka jälkeen käytin putkea ja grep-komentoa listaamaan kansiot, jotka päättyvät kirjaimeen s.
+
+![image](https://github.com/user-attachments/assets/d6d0cc90-3827-4110-a627-ff40e1592ed3)
+
+## Rauta
+Asensins lshw-sovelluksen komennolla
+
+    sudo apt-get install lshw
+
+Jonka jälkeen listasin raudan
+
+![image](https://github.com/user-attachments/assets/07c5e414-b07a-4d30-9866-4db854a5de27)
+
+Komennossa optio -short listaa raudan h/w path -osoitteen mukaan ja -sanitize poistaa yksilöivät tiedot kuten sarjanumerot. Komennon tuloste on järjestetty neljään sarakkeeseen, joiden otsikot ovat H/W path, Device, Class ja Description. Sarake H/W kuvaa komponenttien loogista sijaintia, jota voisi verrata Linuxin hakemistopuuhun. Devices sarake kuvaa komponenttia (esim. scsi2 = small computer system interface 2). Class sarake kuvaa komponentin tyyppiä yleisesti. Description saraakkeessa on kuvaus komponentista, joka on usein sen malli tai nimi.
+
+## Lähteet
+Komentorivin perusteet, komennot, pipe: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
+Grep: https://www.linux.fi/wiki/Grep
+lshw: https://ezix.org/project/wiki/HardwareLiSter
