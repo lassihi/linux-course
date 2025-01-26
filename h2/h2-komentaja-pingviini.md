@@ -95,17 +95,17 @@ Home-kansiossa sijaitsee kansio lassihi, joka on käyttäjän lassihi kotihakemi
 ![image](https://github.com/user-attachments/assets/1f186b64-bfa5-4d38-b8b6-ef6573d51afb)
 
 Muita tärkeitä kansioita ovat:
-- /etc/, joka sisältää asetukset. Esim firefox-esr asetukset:
+- /etc/, joka sisältää asetukset. Esimerkiksi firefox-esr asetukset:
     ![image](https://github.com/user-attachments/assets/0a46e27b-9479-453a-989f-14527e0911fb)
     ![image](https://github.com/user-attachments/assets/6dd4e4ee-acb2-43e0-85d9-23ac551d9e67)
  
 - /media/, joka sisältää järjestelmään yhdistetyt ulkoiset mediat, kuten cd-aseman tai muistikortin.
-- /var/log/, joka sisältää lokit. Esim apt-loki:
+- /var/log/, joka sisältää lokit. Esimerkiksi apt-loki:
     ![image](https://github.com/user-attachments/assets/ac307c1c-ce06-48ee-88ee-5db6af6325a4)
     ![image](https://github.com/user-attachments/assets/174315ce-8f96-482c-ba89-598fa85629fa)
 
 ## Grep
-Grep-komento mahdollistaa rivien hakemisen ja suodattamisen hakusanan tai lausekkeen avulla. Yleinen käyttötarkoitus merkkijonon sisältävän rivin hakeminen tiedostosta. Alla olevassa kuvassa haetaan Documents hakemistossa olevasta tiedostosta "testi.txt" rivit, jotka sisältävät merkkijonon "rivi". 
+Grep-komento mahdollistaa rivien hakemisen ja suodattamisen hakusanan tai lausekkeen avulla. Yleinen käyttötarkoitus on merkkijonon sisältävän rivin hakeminen tiedostosta. Alla olevassa kuvassa haetaan Documents hakemistossa olevasta tiedostosta "testi.txt" rivit, jotka sisältävät merkkijonon "rivi". 
 
 ![image](https://github.com/user-attachments/assets/9b20d8d0-03a3-479c-904f-9a10ed5df3c7)
 
