@@ -37,7 +37,7 @@ Avasin lokin viimeiset 10 riviä komennollo `sudo tail /var/log/apache2/access.l
 ![image](https://github.com/user-attachments/assets/a46f710b-9e68-4b5e-aa4c-b9fbfe7a0ec0)
 
 ## Etusivu uusiksi
-Aloitun uuden etusivun hattu.example.com luomisen luomalla uuden asetustiedoston Apachen sites-available -kansioon
+Aloitun uuden etusivun hattu.example.com luomisen kertaamalla teorian (https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/). Loin uuden asetustiedoston Apachen sites-available -kansioon
 
     sudoedit /etc/apache2/sites-available/hattu.example.com.conf
 
@@ -75,4 +75,22 @@ Latasin localhost-sivun uudelleen ja kirjoittamani teksti näkyi sivulla.
 
 ![image](https://github.com/user-attachments/assets/b4004a91-7b33-49af-aaf0-d2b43c841b34)
 
-## 
+## HTML5 sivu
+Tehdään hattu.example.com sivusta HTML5 sivu Karvisen ohjeiden mukaan (https://terokarvinen.com/2017/starting-with-javascript-arrays-for-of-f12-console/2012/short-html5-page).
+
+Muokkasin sivun index.html tiedostoa
+
+        micro /home/lassihi/public_sites/hattu.example.com/intex.html
+
+![image](https://github.com/user-attachments/assets/5c3b21d4-425f-488e-afc3-b54b49606c98)
+
+Lisäsin vielä kuvan piristämään sivua. Jotta kuva näkyisi sivulla, niin vein kuvatiedoston samaan kansioon, kuin index.html.
+
+![image](https://github.com/user-attachments/assets/26c74339-f499-4637-97ab-54149d27641c)
+
+Avasin sivun selaimella.
+
+![image](https://github.com/user-attachments/assets/7736949f-43ed-45ac-b6a1-4b125279f5c3)
+
+## Curl
+curl mahdollistaa datan hakemisen URLin avulla palvelimilta. 
