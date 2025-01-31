@@ -94,3 +94,28 @@ Avasin sivun selaimella.
 
 ## Curl
 curl mahdollistaa datan hakemisen URLin avulla palvelimilta. 
+
+Localhost-sivun hakeminen curlin avulla
+
+![image](https://github.com/user-attachments/assets/e40e2fb0-b4d6-4318-9017-390eb49109ec)
+
+Sovellus toimii komentokehotteessa, joten sillä ei ole graafista käyttölittymää. Sivu näytetään siis lähdekoodina.
+
+curl manuaalin (https://curl.se/docs/manpage.html#-I) mukaan `curl -I` komento näyttää vain vastauksen otsakkeen (header). Tutkitaan muutamaa google.com otsaketta.
+
+![image](https://github.com/user-attachments/assets/973fec0a-9202-4ba5-b9e2-c32176b8b8a7)
+
+**Date**: Kertoo koska vastaus generoitiin. Vastaus voi olla vanhempi kuin kysely, sillä palvelin voi lähettää aiemmin generoidun vastauksen muistista.
+
+**Cache-Control**: Määrittää kuinka välimuistia hallitaan. Arvo public tarkoittaa, että vastaus voidaan säilöä jaettuun välimuistiin, jolloin palvelin voi lähettää saman vastauksen uudelleen seuraavalle käyttäjälle. Palvelimen lisäksi vastaus voidaan säilöä käyttäjän laitteelle. Arvo max-age=2592000 määrittää kuinka monta sekuntia vanhan vastauksen selain hyväksyy. 2592000s = 30d, eli selain voi hyväksyä palvelimen vastauksen, kunhan se on luotu 30 päivän sisällä.
+
+**Expires**: Kertoo koska vastaus vanhenee.
+
+**X-XXS-Protection**: Määrittää kuinka selaimiin sisäänrakennettua cross site scripting -filtteriä tulee käyttää. Arvo 0 pakottaa selaimen olemaan käyttämättä filtteriä.
+
+## Lähteet
+
+Apache2 name based hosts: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ \
+curl man: https://curl.se/docs/ \
+Cache-Control: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control \
+X-XXS-Protection: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
