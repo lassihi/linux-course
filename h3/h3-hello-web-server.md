@@ -87,15 +87,11 @@ Muokkasin sivun index.html tiedostoa
 
         micro /home/lassihi/public_sites/hattu.example.com/intex.html
 
-![image](https://github.com/user-attachments/assets/5c3b21d4-425f-488e-afc3-b54b49606c98)
-
-Lisäsin vielä kuvan piristämään sivua. Jotta kuva näkyisi sivulla, niin vein kuvatiedoston samaan kansioon, kuin index.html.
-
-![image](https://github.com/user-attachments/assets/26c74339-f499-4637-97ab-54149d27641c)
+![image](https://github.com/user-attachments/assets/da70a320-1e40-4100-91ed-a8dc889873d4)
 
 Avasin sivun selaimella.
 
-![image](https://github.com/user-attachments/assets/7736949f-43ed-45ac-b6a1-4b125279f5c3)
+![image](https://github.com/user-attachments/assets/bc03217a-006e-49b6-900b-2c8a36877ec6)
 
 ## Curl
 curl mahdollistaa datan hakemisen URLin avulla palvelimilta. 
