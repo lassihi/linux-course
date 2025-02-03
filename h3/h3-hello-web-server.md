@@ -3,9 +3,12 @@ Kurssi: Linux palvelimet https://terokarvinen.com/linux-palvelimet/ \
 Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h3-hello-web-server
 
 ## Lue ja tiivistä
-Apache documentation:
+Apache dokumentaatio:
+- Name based virtual hosting mahdollistaa useamman palvelun tai domainin pyörittämisen yhdestä IP-osoitteesta.
+- Pyynnön saapuessa Apache määrittää siinä olevan IP-osoitteen ja porttinumeron avulla oikean sivuston. Jos IP-osoitteessa ja portissa on useampi sivusto, niin käytetään ServerName ja ServerAlias osoitteita määrittämään oikea sivusto.
 
-Name based virtual hosts:
+Name based virtual hosts -ohje:
+- Uuden sivun luonti: Luodaan ja määritetään sivun asetustiedosto. Otetaan asetukset käyttöön. Apache uudelleenkäynnistys. Luodaan sivun hakemisto ja index-tiedosto normikäyttäjänä. Kokeillaan toimivuus.
 
 ## Suoritusympäristö
 Tietokone: Lenovo Legion Y540-15IRH kannettava kytkettynä langallisesti kotiverkkoon.\
@@ -32,12 +35,14 @@ komentorivissä `curl` komentoa käyttämällä
 Toimi kummassakin
 
 ## Apache-loki
-Avasin lokin viimeiset 10 riviä komennollo `sudo tail /var/log/apache2/access.log`.
+Avasin lokin viimeiset rivit komennolla `sudo tail /var/log/apache2/access.log`.
 
 ![image](https://github.com/user-attachments/assets/a46f710b-9e68-4b5e-aa4c-b9fbfe7a0ec0)
 
+Vasemmalta oikealle lokitietoja tarkastelemalla ilmoitetaan ensiksi IP-osoite, josta pyyntö tulee. Seuraavat kaksi viivaa liittyvät käyttäjän tunnistamiseen. Pyydetyt tiedot olivat julkisia, joten tunnistusta ei tehty. Seuraava tieto lokissa kertoo pyynnön ajankohdan, jonka jälkeen ilmoitetaan itse pyyntö. Pyynnöstä selviää pyynnön tyyppi, esim. "GET", pyydetyt resurssit ja käytetty protokolla. Tämän jälkeen ilmoitetaan statuskoodi, jonka palvelin lähettää käyttäjälle, jota seuraa vastauksen pituus tavuina. Seuraavaksi ilmoitetaan osoite, josta pyyntö ohjattiin luomaan. Viimeisenä ilmoitetaan tiedot pyynnön luoneesta selaimesta.
+
 ## Etusivu uusiksi
-Aloitun uuden etusivun hattu.example.com luomisen kertaamalla teorian (https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/). Loin uuden asetustiedoston Apachen sites-available -kansioon
+Aloitun uuden etusivun hattu.example.com luomisen kertaamalla teorian (https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/). Loin uuden asetustiedoston Apachen sites-available -kansioon.
 
     sudoedit /etc/apache2/sites-available/hattu.example.com.conf
 
@@ -71,12 +76,12 @@ Loin seuraavaksi index.html-tiedoston kansioon `/home/lassihi/public_sites/hattu
 
 ![image](https://github.com/user-attachments/assets/9da45f00-2852-4489-9888-fa95d9b069cc)
 
-Latasin localhost-sivun uudelleen ja kirjoittamani teksti näkyi sivulla.
+Latasin localhost sivun uudelleen ja kirjoittamani teksti näkyi sivulla.
 
 ![image](https://github.com/user-attachments/assets/b4004a91-7b33-49af-aaf0-d2b43c841b34)
 
 ## HTML5 sivu
-Tehdään hattu.example.com sivusta HTML5 sivu Karvisen ohjeiden mukaan (https://terokarvinen.com/2017/starting-with-javascript-arrays-for-of-f12-console/2012/short-html5-page).
+Tehdään hattu.example.com sivusta HTML5 sivu ohjeiden mukaan (https://terokarvinen.com/2017/starting-with-javascript-arrays-for-of-f12-console/2012/short-html5-page).
 
 Muokkasin sivun index.html tiedostoa
 
@@ -114,8 +119,10 @@ curl manuaalin (https://curl.se/docs/manpage.html#-I) mukaan `curl -I` komento n
 **X-XXS-Protection**: Määrittää kuinka selaimiin sisäänrakennettua cross site scripting -filtteriä tulee käyttää. Arvo 0 pakottaa selaimen olemaan käyttämättä filtteriä.
 
 ## Lähteet
-
-Apache2 name based hosts: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ \
+Apache dokumentaatio: https://httpd.apache.org/docs/2.4/vhosts/name-based.html \
+Name based virtual hosts: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ \
+Loki: https://httpd.apache.org/docs/2.4/logs.html \
+HTML5: https://terokarvinen.com/2017/starting-with-javascript-arrays-for-of-f12-console/2012/short-html5-page \
 curl man: https://curl.se/docs/ \
 Cache-Control: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control \
 X-XXS-Protection: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
