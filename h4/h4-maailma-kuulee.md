@@ -1,0 +1,108 @@
+# Harjoitus 4: Maailma kuulee
+Kurssi: Linux palvelimet https://terokarvinen.com/linux-palvelimet/ \
+Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee
+
+## x) Lue ja tiivistä
+
+## Suoritusympäristö
+Tietokone: Lenovo Legion Y540-15IRH kannettava kytkettynä langallisesti kotiverkkoon.\
+-Intel Core i7-9750H\
+-NVIDIA Geforce RTX 2060 6GB\
+-16GB DDR4 2666MHz\
+Käyttöjärjestelmä: Windows 11 23H2
+
+Virtualisointiympäristö: VirtualBox Version 7.1.4. Käyttöjärjestelmänä toimii Debian 12 Bookworm käyttäen alla olevan kuvan mukaisia VirtualBox-asetuksia.
+
+![virtualbox-asetukset](https://github.com/user-attachments/assets/ad4b8cd8-9cd2-4ebd-b4f7-86d0b8e23aa1)
+
+## a) Palvelimen vuokraus
+Päätin vuokrata palvelimen käyttäen upcloud.com sivuston palveluita. Suuntasin sivulle ja loin ensiksi käyttäjätunnuksen, jonka jälkeen kirjauduin sisään. Aloitin ilmaisen kokeilujakson lisäämällä maksukortin tiedot palveluun. 
+Aloitin palvelimen vuokrauksen klikkaamalla Deploy now ja valitsemalla Server. 
+
+![image](https://github.com/user-attachments/assets/3b639c63-6f24-42b1-8a1d-04f37bc71cf1)
+
+Palvelimen sijainniksi valitsin mahdollisimman lähellä olevan, jotka palvelussa olivat FI-HEL1 ja FI-HEL2, jatkoin ykkösvaihtoehdolla. Palvelimeksi valitsin halvimman vaihtoehdon (prosessori: 1 ydin, muisti: 1 Gt, tallennustila: 10Gt, hinta: 3.00€/kk).
+
+Jätin tallennustila-osion asetukset oletuksiksi.
+
+![image](https://github.com/user-attachments/assets/c8c114b4-481d-4aee-bd03-8b024dc07da9)
+
+En ottanut käyttöön automaattisia palvelimen varmuuskopiointeja, sillä tämä olisi luonut lisäkustannuksia.
+
+![image](https://github.com/user-attachments/assets/1ec6f4f1-51a0-45ad-8377-5e012035d1dd)
+
+Käyttöjärjestelmäksi valitsin Debian GNU/Linux 12 (Bookworm). Käyttöjärjestelmä on kurssin aikana tullut tutuksi, joten miksi vaihtaa nyt.
+
+![image](https://github.com/user-attachments/assets/4b39e695-4ceb-4cf5-9f4f-a3afc1d939f1)
+
+Verkkoasetukset jätin oletuksiksi. 
+
+![image](https://github.com/user-attachments/assets/1d26738a-9c98-4850-8ab6-5a14389496e7)
+
+Jätin kaikki extravalinnat ottamatta.
+
+![image](https://github.com/user-attachments/assets/915200ff-af04-4712-92f8-ae7aae8c5f50)
+
+Kirjautumisvaihtoehdoksi valitsin SSH avaimen. Ilmeisesti SSH kirjautuminen on valitsemassani käyttöjärjestelmässä ainoa vaihtoehdo. 
+
+![image](https://github.com/user-attachments/assets/568c8dc8-bce4-4f29-8327-4dc23c1fc5eb)
+
+Tässä vaiheessa avasin terminaalin SSH avainten generoimista varten. Generoin avaimet komennolla `ssh-keygen`
+
+![image](https://github.com/user-attachments/assets/2f114c46-7bae-44b1-8ed8-69a0ece92e56)
+
+Avasin tiedoston, johon julkinen avain tallennettiin ja kopioin sieltä julkisen avaimen, jonka jälkeen liitin avaimen upcloud-sivustolle. Loput  palvelimen määritykset jätin oletuksiksi ja otin palvelimen käyttöön klikkaamalla Deploy. Käyttöönotto oli minuutin latailun jälkeen valmis.
+
+## b) Alkutoimet virtuaalipalvelimella
+Yhdistin palvelimeen root-käyttäjään ssh-yhteyden avulla. Konsoli varoitti tuntemattomasta osoitteesta, mutta jatkoin eteenpäin naputtelemalla "yes".
+
+![image](https://github.com/user-attachments/assets/a66f4473-2b35-4966-84bf-b47fd2ad34b7)
+
+Ensitöikseni päivitin asennetut paketit ja listan paketeista komennolla `sudo apt-get upgrade`. 
+
+Seuraavaksi otin palomuurin käyttöön ufw-ohjelmalla. En ollut varma oliko ohjelma esiasennettuna palvelimelle, joten yritin suorittaa komennon `sudo ufw allow 22/tcp`, tehdäksen ssh-yhteydelle reiän.
+Komento ei toiminut, joten asensin tämän yhdessä bash-completion ohjelman kanssa. Tein asennuksen jälkeen reiän ssh-yhteydelle edellä mainitulla komennolla ja otin palomuurin käyttöön komennolla `sudo ufw enable`. 
+
+Loin seuraavaksi käyttäjän itselleni ja lisäsin tämän käytttäjän ryhmiin sudo ja adm.
+
+    sudo adduser lassi
+    sudo adduser lassi sudo
+    sudo adduser lassi adm
+
+Kopioin tämän jälkeen kirjautumiseen käytetyn ssh-avaimen uudelle käyttäjälle.
+
+![image](https://github.com/user-attachments/assets/422b5d62-9b60-4ea3-ac0e-b2396c725e59)
+
+Yrityn kirjautua uudelle käyttäjälle uudesta terminaaliyhteydestä.
+
+![image](https://github.com/user-attachments/assets/b0afe0aa-4241-4546-ae15-4043395b2ccf)
+
+En muistanut luennolta kuinka tästä edettiin, mutta uskoin virheen johtuvan kopioidun kansion ja tiedoston käyttöoikeuksista. Löysin artikkelin uuden käyttäjän luonnista (https://humanwhocodes.com/snippets/2021/03/create-user-linux-ssh-key/) ja seurasin sen ohjeita. Tarkastin ensisiksi kuka omistaa kansion .ssh, vaihdoin omistajaksi käyttäjän, vaihdoin käyttöoikeudet ja tarkastin lopuksi, että muutokset toteutuivat.
+
+![image](https://github.com/user-attachments/assets/f38c4b67-d380-467a-90a5-91ac5ae43fdd)
+
+Yritin kirjautumista uudestaan, joka tällä kertaa onnistui. Varmistin samalla, että sudo toimii käyttäjällä.
+
+Lukitsin root-käyttäjän komennolla `sudo usermod --lock root` ja poistin ssh kirjautumisen käyttäen komentoa `sudoedit /etc/ssh/sshd_config` ja vaihtamalla kohdan "PermitRootLogin" arvoksi "no".
+
+![image](https://github.com/user-attachments/assets/bd05337e-1f07-4b14-ad61-cffed6cbdfa1)
+
+Varmistin lopuksi, että root-käyttäjälle ei voinut enää kirjautua. 
+
+![image](https://github.com/user-attachments/assets/f6c0304d-28f7-4a8a-ad99-f49d79cbbd99)
+
+## c) Apache virtuaalipalvelimelle
+Tein palomuuriin reiän porttin 80 ja asensin apachen.
+
+![image](https://github.com/user-attachments/assets/c302823e-fa6f-4a49-bfa7-8064ecb06560)
+
+![image](https://github.com/user-attachments/assets/7e1fb0f7-e433-45e8-a607-735e0d033a21)
+
+Muokkasin testisivun index tiedostoa komennolla `sudoedit /var/www/html/index.html`.
+
+![image](https://github.com/user-attachments/assets/3ec3cdf4-ec7c-4d07-8193-dfc2b6abae0d)
+
+Tallensin muokkaukset ja avasin sivun selaimella.
+
+![image](https://github.com/user-attachments/assets/1ced663d-2473-49d8-805a-5072c7decf4f)
+
