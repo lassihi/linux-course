@@ -63,7 +63,7 @@ Ensitöikseni päivitin asennetut paketit ja listan paketeista komennolla `sudo 
 Seuraavaksi otin palomuurin käyttöön ufw-ohjelmalla. En ollut varma oliko ohjelma esiasennettuna palvelimelle, joten yritin suorittaa komennon `sudo ufw allow 22/tcp`, tehdäksen ssh-yhteydelle reiän.
 Komento ei toiminut, joten asensin tämän yhdessä bash-completion ohjelman kanssa. Tein asennuksen jälkeen reiän ssh-yhteydelle edellä mainitulla komennolla ja otin palomuurin käyttöön komennolla `sudo ufw enable`. 
 
-Loin seuraavaksi käyttäjän itselleni ja lisäsin tämän käytttäjän ryhmiin sudo ja adm.
+Loin seuraavaksi käyttäjän itselleni ja lisäsin tämän käyttäjän ryhmiin sudo ja adm.
 
     sudo adduser lassi
     sudo adduser lassi sudo
@@ -106,3 +106,23 @@ Tallensin muokkaukset ja avasin sivun selaimella.
 
 ![image](https://github.com/user-attachments/assets/1ced663d-2473-49d8-805a-5072c7decf4f)
 
+## d) Name based virtual host virtuaalipalvelimella
+Seurasin [viime raporttiani](https://github.com/lassihi/linux-course/blob/main/h3/h3-hello-web-server.md) name based virtual hostin määrittämiseksi. \
+Askeleet lyhyesti:
+* Luodaan ja määritetään sivun asetustiedosto `sudoedit /etc/apache2/sites-available/toimiiko.sivusto.com.conf` ![image](https://github.com/user-attachments/assets/ed1462b9-3fa7-4897-8867-eb50c808536b)
+
+* Otetaan asetukset käyttöön ja poistetaan ylimääräiset `sudo a2ensite toimiiko.sivusto.com.conf`, `sudo a2dissite 000-default.conf default-ssl.conf`
+* Apache uudelleenkäynnistys `sudo systemctl restart apache2`
+* Luodaan käyttäjän käyttäjän kotihakemistoon index.html tiedosto, asetustiedostossa määritettyyn sijaintiin ![image](https://github.com/user-attachments/assets/c1b2ea1b-6f52-41ce-a611-130123e0e2b6)
+
+Tein askeleet, eikä sivusto toiminut selaimella, "403 Forbidden". Tarkastin lokin `tail /var/log/apache2/error.log`, josta löytyi seuraava virheilmoitus.
+
+![image](https://github.com/user-attachments/assets/8131d873-6524-4e8d-a35f-66f7e520d665)
+
+Virheilmoituksen perusteella uskoin, että virhe johtuu aiemmin määrittelemistäni `/home/lassi` hakemiston tiukista oikeuksista. Löysin netistä vastaukset ongelmaani (https://stackoverflow.com/questions/1225594/apache-13-permission-denied-in-users-home-directory). Annoin hakemistoon luku- ja ajo-oikeudet komennolla `sudo chmod 755 -R /home/lassi`. Latasin sivun selaimella uudestaan ja onnekseni se toimi.
+
+![image](https://github.com/user-attachments/assets/98d47498-ead3-4c6b-88c3-34b932d6b509)
+
+## Lähteet:
+https://humanwhocodes.com/snippets/2021/03/create-user-linux-ssh-key/
+https://stackoverflow.com/questions/1225594/apache-13-permission-denied-in-users-home-directory
