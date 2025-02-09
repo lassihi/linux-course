@@ -23,7 +23,7 @@ Susanna Lehto 2022: [Teoriasta käytäntöön pilvipalvelimen avulla (h4)](https
  
 Tero Karvinen 2012: [First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)
 * Luo uusi Linux-palvelin, lisää SSH-avaimet tai käytä vahvaa salasanaa, määritä palomuuri ja lisää tavallinen käyttäjä. Lukitse root-käyttäjä ja estä sen SSH-kirjautuminen.
-* Päivitä ohjelmistojen tietoturvaohjelmistot aktiivisesti komennolla `sudo apt-get update`, `sudo apt-get upgrade`.
+* Päivitä ohjelmistojt aktiivisesti komennoilla `sudo apt-get update`, `sudo apt-get upgrade`.
 * DNS-nimen ostamiseen suositellaan NameCheap tai Gandi palveluita. Täytä palvelussa tarvittavat tiedot ja testaa toimivuus.
 
 ## Suoritusympäristö
