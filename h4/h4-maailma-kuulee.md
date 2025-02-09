@@ -143,6 +143,8 @@ Virheilmoituksen perusteella uskoin, että virhe johtui aiemmin määrittelemist
 ![image](https://github.com/user-attachments/assets/98d47498-ead3-4c6b-88c3-34b932d6b509)
 
 ## Lähteet:
+Kurssi: https://terokarvinen.com/linux-palvelimet/
+Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4): https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/ \
 Tero Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ \
 Palvelin vuokrattu: https://upcloud.com/ \
