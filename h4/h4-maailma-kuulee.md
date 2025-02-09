@@ -65,7 +65,7 @@ En muokannut vaihtehtoisia valintoja.
 
 ![image](https://github.com/user-attachments/assets/915200ff-af04-4712-92f8-ae7aae8c5f50)
 
-Kirjautumisvaihtoehdoksi valitsin SSH avaimen. Ilmeisesti SSH kirjautuminen on valitsemassani käyttöjärjestelmässä ainoa vaihtoehdo. 
+Kirjautumisvaihtoehdoksi valitsin SSH avaimen. Ilmeisesti SSH avain on valitsemassani käyttöjärjestelmässä ainoa kirjautumisvaihtoehdo. 
 
 ![image](https://github.com/user-attachments/assets/568c8dc8-bce4-4f29-8327-4dc23c1fc5eb)
 
@@ -76,7 +76,7 @@ Tässä vaiheessa avasin terminaalin SSH avainten generoimista varten. Generoin 
 Avasin tiedoston, johon julkinen avain tallennettiin ja kopioin sieltä julkisen avaimen, jonka jälkeen liitin avaimen upcloud-sivustolle. Loput  palvelimen määritykset jätin oletuksiksi ja otin palvelimen käyttöön klikkaamalla Deploy. Käyttöönotto oli minuutin latailun jälkeen valmis.
 
 ## b) Alkutoimet virtuaalipalvelimella
-Yhdistin palvelimeen root-käyttäjään ssh-yhteyden avulla. Konsoli varoitti tuntemattomasta osoitteesta, mutta jatkoin eteenpäin naputtelemalla "yes".
+Yhdistin palvelimen root-käyttäjään ssh-yhteyden avulla. Konsoli varoitti tuntemattomasta osoitteesta, mutta jatkoin eteenpäin naputtelemalla "yes".
 
 ![image](https://github.com/user-attachments/assets/a66f4473-2b35-4966-84bf-b47fd2ad34b7)
 
@@ -134,7 +134,7 @@ Askeleet lyhyesti:
 * Apache uudelleenkäynnistys `sudo systemctl restart apache2`
 * Loin käyttäjän kotihakemistoon index.html tiedoston, asetustiedostossa määritettyyn sijaintiin. Asensin micro-ohjelman tiedoston muokkaamista varten komennolla `sudo apt-get install micro`. ![image](https://github.com/user-attachments/assets/c1b2ea1b-6f52-41ce-a611-130123e0e2b6)
 
-Tein askeleet, eikä sivusto toiminut selaimella Virhe "403 Forbidden". Tarkastin lokin `tail /var/log/apache2/error.log`, josta löytyi seuraava virheilmoitus.
+Tein askeleet, eikä sivusto toiminut selaimella. Virhe "403 Forbidden". Tarkastin lokin `tail /var/log/apache2/error.log`, josta löytyi seuraava virheilmoitus.
 
 ![image](https://github.com/user-attachments/assets/8131d873-6524-4e8d-a35f-66f7e520d665)
 
