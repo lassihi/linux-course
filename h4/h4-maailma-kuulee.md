@@ -144,9 +144,15 @@ Virheilmoituksen perusteella uskoin, että virhe johtui aiemmin määrittelemist
 
 ## Lähteet:
 Kurssi: https://terokarvinen.com/linux-palvelimet/
+
 Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee
-Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4): https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/ \
-Tero Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ \
-Palvelin vuokrattu: https://upcloud.com/ \
-SSH public key uudelle käyttäjälle: https://humanwhocodes.com/snippets/2021/03/create-user-linux-ssh-key/ \
+
+Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4): https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
+
+Tero Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
+
+Palvelin vuokrattu: https://upcloud.com/
+
+SSH public key uudelle käyttäjälle: https://humanwhocodes.com/snippets/2021/03/create-user-linux-ssh-key/
+
 Apache virhekoodin 13 ratkaisu: https://stackoverflow.com/questions/1225594/apache-13-permission-denied-in-users-home-directory
