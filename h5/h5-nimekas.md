@@ -114,10 +114,29 @@ Testasin lopuksi selaimella, että alidomain toimii.
 ![image](https://github.com/user-attachments/assets/b3f3dd61-d616-462b-beac-b011ea03da30)
 
 ## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla
-"Host" tai "dig" -komennot eivät ole asennettuna koneellani, joten asensin ne komennolla `sudo apt-get install dnsutils`. Host on DNS lookup työkalu, jota käytetään tavallisesti hakemaan nimeä vastaava IP-osoite ja toisinpäin. Dig on taas DNS palvelinten tutkimiseen ja vianselvitykseen käytetty työkalu, joka tarjoaa host komentoa monipuolisemmat ominaisuudet. 
+"Host" tai "dig" -komennot eivät ole asennettuna koneellani, joten asensin ne komennolla `sudo apt-get install dnsutils`. Host on DNS lookup työkalu, jota käytetään tavallisesti hakemaan nimeä vastaava IP-osoite ja toisinpäin. Dig on taas DNS palvelinten tutkimiseen ja vianselvitykseen käytetty työkalu, joka tarjoaa host komentoa monipuolisemmat ominaisuudet. Dig komento hakee automaattisesti vain A-tietueen tiedot, ellei sitä käske hakemaan muita tietueita. Helpoin tapa löytää yhdellä dig komennolla suurin osa tietueista on käyttää hyväksi ANY pyyntöä.
 
 Ajoin seuraavaksi komennot omalle domainnimelleni.
 ![image](https://github.com/user-attachments/assets/4661c726-916d-4741-b2a8-f22b3573d451)
-![image](https://github.com/user-attachments/assets/925eab2b-1e4b-4a22-9c3a-0ce27571df97)
+![image](https://github.com/user-attachments/assets/2f02a09c-a11c-497b-944b-651e78bcb668)
 
-Host komennolla saatu vastaus on yksinkertainen ja näyttää mikä IP-osoite on yhdistetty nimeen. Tämän lisäksi näytetään sähköpostista vastaavat viestipalvelimet, joita Dig komento ei oletuksena näytä. Dig komento näyttää tarkemmat tiedot DNS kyselystä ja vastauksesta. Oleellista on katsoa ANSWER SECTION -kohdan tiedot, jossa näytetään DNS palvelimen vastaus kyselyyn. Kumpikin komento sai selville domainnimeeni yhdistetyn IP-osoitteen.
+Host komennolla saatu vastaus on yksinkertainen ja näyttää mikä IP-osoite on yhdistetty nimeen. Tämän lisäksi näytetään sähköpostista vastaavat viestipalvelimet, joita Dig komento ei näyttänyt. Dig komento tietueiden lisäksi tarkemmat tiedot DNS kyselystä ja vastauksesta. Oleellista on katsoa ANSWER SECTION -kohdan tiedot, jossa näytetään DNS palvelimen vastaus kyselyyn. Kumpikin komento sai selville domainnimeeni yhdistetyn IP-osoitteen eli A-tietueen. Sen lisäksi dig löysi NS-tietueet eli nimen nimipalvelimet ja HINFO-tietueen eli tiedot host-laitteesta. HINFO tietueen vastaus "RFC8482" on IETF (Internet Engineering Task Force) ehdotettu standardi, joka kertoo, että palvelin ei käsittele ANY pyyntöä tarkoitetulla tavalla esimerkiksi pyynnön monimutkaisuuden tai tietoturvan takia ([tarkempi kuvaus / lähde](https://datatracker.ietf.org/doc/html/rfc8482)). Uskon, että tästä mahdollisesti johtuu MX-tietueen eli sähköpostipalvelimen puuttuminen vastauksesta.
+
+Ajoin komennot pienemmän yrityksen nimellä.
+![image](https://github.com/user-attachments/assets/cdb074f6-610b-4c6f-8dfb-a062f979786d)
+![image](https://github.com/user-attachments/assets/01f7b8f0-8a6d-40df-9fba-8c3c698cf099)
+
+Kummankin komennon tulosteesta huomataan, että nimi on liitetty kahteen IP-osoitteeseen ja yhteen sähköpostipalvelimeen. Dig komennossa näkyy nyt jo tuttujen tietueiden lisäksi TXT- ja SOA-tietueita. TXT-tietue on kaikessa yksinkertaisuudessaan tekstiä, jota on mahdollista lisätä DNS-tietoihin. Nykyään TXT-tietuetta hyödynnetään kuitenkin pääasiassa sähköpostien filtteröinnissä. SOA-tietue pitää sisällään tärkeää ja usein hallinnollista tietoa nimestä.
+
+Ajoin komennot vielä suuren yrityksen nimellä. 
+![image](https://github.com/user-attachments/assets/46ab3155-061e-496e-8e44-7b258b30753c)
+![image](https://github.com/user-attachments/assets/ba9ac326-dfce-43d0-b4ac-872b5f527f7b)
+
+Komentojen tuloste suurella yrityksellä eroaa pienemmästä yrityksestä pääasiassa tietueiden määrällä.
+
+## Lähteet
+TXT: https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/
+SOA: https://www.cloudflare.com/learning/dns/dns-records/dns-soa-record/
+HINFO RFC8482: https://datatracker.ietf.org/doc/html/rfc8482
+
+
