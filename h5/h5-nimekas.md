@@ -102,4 +102,22 @@ Tarkastin selaimella, että muutokset toimivat.
 ![image](https://github.com/user-attachments/assets/deb02be1-1b6d-414e-b36d-e89df227bcfb)
 ![image](https://github.com/user-attachments/assets/bbe71bc8-5838-48d8-adee-881c03d85a57)
 
-## d) Kaksi uutta alidomainia
+## d) A- ja CNAME-tietue alidomain
+Siirryin luomaan alidomaineja namecheapin sivulle. Sivulla navigoin Account -> Dashboard -> Manage -> Advanced DNS -> Add a new record. Olin jo tehtävässä a määrittänyt www-alidomainin A-tietueella, joten tein uuden alidomainin CNAME-tietueella. A- ja CNAME-tietueen pääasiallinen ero on, että A-tietueella määritetään domainnimi osoittamaan IP-osoitteeseen, kun taas CNAME-tietueella määritetään domainnini osoittamaan toiseen nimeen.
+
+Loin uuden CNAME tietueen it-alidomainille. Laitoin tässä kohtaa alidomainin osoittamaan vain päädomainiin.
+
+![image](https://github.com/user-attachments/assets/0b29981b-0a6d-4350-b4b3-386aed8204af)
+
+Testasin lopuksi selaimella, että alidomain toimii.
+
+![image](https://github.com/user-attachments/assets/b3f3dd61-d616-462b-beac-b011ea03da30)
+
+## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla
+"Host" tai "dig" -komennot eivät ole asennettuna koneellani, joten asensin ne komennolla `sudo apt-get install dnsutils`. Host on DNS lookup työkalu, jota käytetään tavallisesti hakemaan nimeä vastaava IP-osoite ja toisinpäin. Dig on taas DNS palvelinten tutkimiseen ja vianselvitykseen käytetty työkalu, joka tarjoaa host komentoa monipuolisemmat ominaisuudet. 
+
+Ajoin seuraavaksi komennot omalle domainnimelleni.
+![image](https://github.com/user-attachments/assets/4661c726-916d-4741-b2a8-f22b3573d451)
+![image](https://github.com/user-attachments/assets/925eab2b-1e4b-4a22-9c3a-0ce27571df97)
+
+Host komennolla saatu vastaus on yksinkertainen ja näyttää mikä IP-osoite on yhdistetty nimeen. Tämän lisäksi näytetään sähköpostista vastaavat viestipalvelimet, joita Dig komento ei oletuksena näytä. Dig komento näyttää tarkemmat tiedot DNS kyselystä ja vastauksesta. Oleellista on katsoa ANSWER SECTION -kohdan tiedot, jossa näytetään DNS palvelimen vastaus kyselyyn. Kumpikin komento sai selville domainnimeeni yhdistetyn IP-osoitteen.
