@@ -78,11 +78,28 @@ Siirryin public_sites kansioon ja loin uuden alikansion lassihirvonen.com, jonne
 ![image](https://github.com/user-attachments/assets/2d25e884-bb34-452c-b902-c9720509acb2)
 ![image](https://github.com/user-attachments/assets/6efa4fde-6db6-4292-ad62-1b8f612d1df8)
 
-![image](https://github.com/user-attachments/assets/76f3372b-fcce-4361-b593-2d1a90e6530e)
+![image](https://github.com/user-attachments/assets/6a7b86e6-a707-4dbc-bbf6-a1f5d49ee695)
 
 Kopioin index.html muiden tiedostojen pohjaksi.
 
-![image](https://github.com/user-attachments/assets/7872a57e-3b4d-4bc7-9ba3-93a8609e73be)
+![image](https://github.com/user-attachments/assets/b2d2613b-ddc5-477d-bd4d-e8467fe34975)
 
+Muokkasin julkaisut sivua `micro index.html`.
 
+![image](https://github.com/user-attachments/assets/ea8c6972-1a3c-416b-9676-509f4b6540e7)
 
+Muokkasin projektit sivua `micro julkaisut.html`.
+
+![image](https://github.com/user-attachments/assets/17c2fcc3-71c7-4883-8818-12442b38bf8d)
+
+Kopioin seuraavaksi kansion lassihirvonen.com virtuaalikoneeltani palvelimelle public_sites kansioon scp-komennon avulla. 
+
+![image](https://github.com/user-attachments/assets/f302bfc2-9123-4680-a7f9-2cb427ccb6cc)
+
+Tarkastin selaimella, että muutokset toimivat.
+
+![image](https://github.com/user-attachments/assets/e3147cb1-71f3-426a-9ad8-cca368cc9ea4)
+![image](https://github.com/user-attachments/assets/deb02be1-1b6d-414e-b36d-e89df227bcfb)
+![image](https://github.com/user-attachments/assets/bbe71bc8-5838-48d8-adee-881c03d85a57)
+
+## d) Kaksi uutta alidomainia
