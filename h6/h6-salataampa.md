@@ -110,7 +110,7 @@ Tässä kohtaa varmennetun sivuston tulisi toimia salatulla yhteydellä. Varmist
 ## b) A-rating. Testaa oma sivusi TLS jollain yleisellä laadunvarmistustyökalulla.
 28.2.2024 23.41-23.46
 
-Menin selaimella osoitteeseen https://www.ssllabs.com/ssltest/, ja syötin domainnimen lassihirvonen.com hostname-hakukenttään. Sivusto lataili tuloksia noin kaksi minuuttia, jonka jälkeen antoi arvosanaksi A.
+Menin selaimella osoitteeseen https://www.ssllabs.com/ssltest/ ja syötin domainnimen lassihirvonen.com hostname-hakukenttään. Sivusto lataili tuloksia noin kaksi minuuttia, jonka jälkeen antoi arvosanaksi A.
 
 ![image](https://github.com/user-attachments/assets/3f7519f7-0af9-4127-9078-0d4ed7d94342)
 
@@ -137,7 +137,7 @@ Heti ensisilmäyksellä huomaa, että nyt protokollina on käytössä TCP ja TLS
 
 ![image](https://github.com/user-attachments/assets/fb432481-3a87-4078-a180-89be049573a7)
 
-Toisin kuin salaamattomassa liikenteessä, niin mahdollisten käyttäjätunnusten ja salasanojen löytäminen salatusta liikenteestä on lähes mahdotonta, ellei tiedossa ole salauksessa käytetyn avainparin yksityistä avainta.
+Toisin kuin salaamattomassa liikenteessä, niin mahdollisten käyttäjätunnusten ja salasanojen löytäminen salatusta liikenteestä on lähes mahdotonta, ellei tiedossa ole salauksessa käytetyn avainparin yksityinen avain.
 
 ## Lähteet
 Karvinen 2025: Linux palvelimet: https://terokarvinen.com/linux-palvelimet/
