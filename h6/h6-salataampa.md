@@ -98,7 +98,7 @@ Olin saanut saman virheilmoituksen [harjoituksessa 3](https://github.com/lassihi
 
 Nyt uudelleenkäynnistys onnistui ongelmitta. 
 
-Tein https-yhteydelle reiän palomuurin porttiin 443.
+Tein https-yhteydelle reiän palomuuriin porttiin 443.
 
 ![image](https://github.com/user-attachments/assets/598dd8c7-584f-498c-bb19-ee241e4a147b)
 
