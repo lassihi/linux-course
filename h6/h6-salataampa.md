@@ -40,7 +40,7 @@ Virtualisointiympäristö: VirtualBox Version 7.1.4. Käyttöjärjestelmänä to
 ![virtualbox-asetukset](https://github.com/user-attachments/assets/ad4b8cd8-9cd2-4ebd-b4f7-86d0b8e23aa1)
 
 ## a) Let's. Hanki ja asenna palvelimellesi ilmainen TLS-sertifikaatti Let's Encryptilta. Osoita, että se toimii.
-28.2.2024 17.55-19.00
+28.2.2025 17.55-19.00
 
 Aloitin kirjautumalla palvelimelle ssh-yhteydellä, `ssh lassi@lassihirvonen.com`. \
 Käynnistin apachen uudestaan, jotta pystyin aloittamaan puhtaalta pöydältä, `sudo systemctl apache2 restart`. \
@@ -108,14 +108,14 @@ Tässä kohtaa varmennetun sivuston tulisi toimia salatulla yhteydellä. Varmist
 ![image](https://github.com/user-attachments/assets/0a0e70b5-9b22-4810-8617-15d2a86c20b3)
 
 ## b) A-rating. Testaa oma sivusi TLS jollain yleisellä laadunvarmistustyökalulla.
-28.2.2024 23.41-23.46
+28.2.2025 23.41-23.46
 
 Menin selaimella osoitteeseen https://www.ssllabs.com/ssltest/ ja syötin domainnimen lassihirvonen.com hostname-hakukenttään. Sivusto lataili tuloksia noin kaksi minuuttia, jonka jälkeen antoi arvosanaksi A.
 
 ![image](https://github.com/user-attachments/assets/3f7519f7-0af9-4127-9078-0d4ed7d94342)
 
 ## c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä. Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?
-28.2.2024 23.11-23.41
+28.2.2025 23.11-23.41
 
 En tehnyt tässä tehtävässä weppilomaketta palvelimelle, vaan vertailin Wiresharkilla http- ja https-yhteyksiä.
 
