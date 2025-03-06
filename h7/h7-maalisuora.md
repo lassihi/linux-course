@@ -46,7 +46,7 @@ Tarkastin, että ajo-oikeus tuli voimaan ja ajoin tiedoston.
 
 Tiedosto tulosti merkkijonon "Hei maailma", niin kuin oli tarkoitus.
 
-#### SIIRRY SEURAAVAKSI LUKEMAAN OSIO [c)](https://github.com/lassihi/linux-course/edit/main/h7/h7-maalisuora.md#c-laita-linuxiin-uusi-itse-tekem%C3%A4si-komento-niin-ett%C3%A4-kaikki-k%C3%A4ytt%C3%A4j%C3%A4t-voivat-ajaa-sit%C3%A4), jossa oli tarkoitus tehdä komento, joka kirjoittaa ja ajaa kaksi hei_maailma tiedostoa.
+#### SIIRRY SEURAAVAKSI LUKEMAAN OSIO [c)](https://github.com/lassihi/linux-course/main/h7/h7-maalisuora.md#c-laita-linuxiin-uusi-itse-tekem%C3%A4si-komento-niin-ett%C3%A4-kaikki-k%C3%A4ytt%C3%A4j%C3%A4t-voivat-ajaa-sit%C3%A4), jossa oli tarkoitus tehdä komento, joka kirjoittaa ja ajaa kaksi hei_maailma tiedostoa.
 
 #### Jatka sen jälkeen tästä.
 
