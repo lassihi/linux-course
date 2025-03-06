@@ -46,10 +46,27 @@ Tarkastin, että ajo-oikeus tuli voimaan ja ajoin tiedoston.
 
 Tiedosto tulosti merkkijonon "Hei maailma", niin kuin oli tarkoitus.
 
-#### Siirry seuraavaksi lukemaan osio [c)](https://github.com/lassihi/linux-course/edit/main/h7/h7-maalisuora.md#c-laita-linuxiin-uusi-itse-tekem%C3%A4si-komento-niin-ett%C3%A4-kaikki-k%C3%A4ytt%C3%A4j%C3%A4t-voivat-ajaa-sit%C3%A4), jossa oli tarkoitus tehdä komento, joka kirjoittaa ja ajaa kaksi hei_maailma tiedostoa.
+#### SIIRRY SEURAAVAKSI LUKEMAAN OSIO [c)](https://github.com/lassihi/linux-course/edit/main/h7/h7-maalisuora.md#c-laita-linuxiin-uusi-itse-tekem%C3%A4si-komento-niin-ett%C3%A4-kaikki-k%C3%A4ytt%C3%A4j%C3%A4t-voivat-ajaa-sit%C3%A4), jossa oli tarkoitus tehdä komento, joka kirjoittaa ja ajaa kaksi hei_maailma tiedostoa.
 
 #### Jatka sen jälkeen tästä.
 
+Tein seuraavan tiedoston pythonilla. Micro-editoria käyttäessä virheilmoitus toistui edelleen.
+
+![image](https://github.com/user-attachments/assets/37f2d7c9-7cfb-4adf-b603-f17405fc9c70)
+
+![image](https://github.com/user-attachments/assets/6d72c4c2-2515-4285-b08b-6ed74e016e04)
+
+Virheilmoituksesta huolimatta micro näytti toimivan oikein ja tallensi tällä kertaa tiedoston.
+
+Muutin tiedoston oikeudet.
+
+![image](https://github.com/user-attachments/assets/ad4e45df-e3d9-4570-a63e-e7bd9a0637b6)
+
+Ajoin tiedoston.
+
+![image](https://github.com/user-attachments/assets/e70f6af5-89dd-4d89-8c6e-77b5e0254934)
+
+Viimeisksi käytin javaa. 
 ## b)
 
 ## c) Laita Linuxiin uusi, itse tekemäsi komento niin, että kaikki käyttäjät voivat ajaa sitä.
@@ -157,3 +174,5 @@ Kopioin tiedoston sijaintiin `/usr/local/bin`, jolloin se tulee käytettäväksi
 Vaihdoin hakemistoa ja varmistin, että komento toimii.
 
 ![image](https://github.com/user-attachments/assets/ea5cd3a4-7d15-4a2f-8df9-ab7a2eca358c)
+
+#### Siirry takaisin a) osaan.
