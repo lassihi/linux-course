@@ -143,7 +143,7 @@ Virheilmoituksen perusteella uskoin, että virhe johtui aiemmin määrittelemist
 ![image](https://github.com/user-attachments/assets/98d47498-ead3-4c6b-88c3-34b932d6b509)
 
 ## Lähteet:
-Kurssi: https://terokarvinen.com/linux-palvelimet/
+Linux palvelimet kurssi: https://terokarvinen.com/linux-palvelimet/
 
 Tehtävänanto: https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee
 
