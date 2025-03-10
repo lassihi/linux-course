@@ -39,7 +39,11 @@ Kone käynnistyi uudelleen, joka vei muutaman minuutin. Uudelleenkäynnistyksen 
 
 ## Lähteet
 Linux palvelimet -kurssi ja tehtävänanto: https://terokarvinen.com/linux-palvelimet/
-Raportin kirjoittaminen: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ \
-Free software: https://www.gnu.org/philosophy/free-sw.html \
-Debian ISO image: https://www.debian.org/CD/live/ \
+
+Raportin kirjoittaminen: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+
+Free software: https://www.gnu.org/philosophy/free-sw.html
+
+Debian ISO image: https://www.debian.org/CD/live/
+
 Asennuksessa käytetyt ohjeet: https://terokarvinen.com/2021/install-debian-on-virtualbox/
