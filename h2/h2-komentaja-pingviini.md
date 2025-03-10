@@ -130,6 +130,10 @@ Jonka jälkeen listasin raudan
 Komennossa optio -short listaa raudan h/w path -osoitteen mukaan ja -sanitize poistaa yksilöivät tiedot kuten sarjanumerot. Komennon tuloste on järjestetty neljään sarakkeeseen, joiden otsikot ovat H/W path, Device, Class ja Description. Sarake H/W kuvaa komponenttien loogista sijaintia, jota voisi verrata Linuxin hakemistopuuhun. Devices sarake kuvaa komponenttia (esim. scsi2 = small computer system interface 2). Class sarake kuvaa komponentin tyyppiä yleisesti. Description saraakkeessa on kuvaus komponentista, joka on usein sen malli tai nimi.
 
 ## Lähteet
-Komentorivin perusteet, komennot, pipe: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited \
-Grep: https://www.linux.fi/wiki/Grep \
+Linux palvelimet -kurssi ja tehtävänanto: https://terokarvinen.com/linux-palvelimet/
+
+Komentorivin perusteet, komennot, pipe: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
+
+Grep: https://www.linux.fi/wiki/Grep 
+
 lshw: https://ezix.org/project/wiki/HardwareLiSter 
