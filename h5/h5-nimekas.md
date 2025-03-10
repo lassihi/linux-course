@@ -134,12 +134,18 @@ Ajoin komennot vielä suuren yrityksen nimellä.
 Komentojen tuloste suurella yrityksellä eroaa pienemmästä yrityksestä pääasiassa tietueiden määrällä.
 
 ## Lähteet
-Linux palvelimet -kurssi / tehtävänanto: https://terokarvinen.com/linux-palvelimet/ \
-Sivu vuokrattu: https://www.namecheap.com/ \
-Host manuaali: man host -komento, (https://linux.die.net/man/1/host) \
-Dig manuaali: man dig -komento, (https://linux.die.net/man/1/dig) \
-HINFO "RFC8482": https://datatracker.ietf.org/doc/html/rfc8482 \
-TXT-tietue: https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/ \
+Linux palvelimet -kurssi / tehtävänanto: https://terokarvinen.com/linux-palvelimet/
+
+Sivu vuokrattu: https://www.namecheap.com/
+
+Host manuaali: man host -komento, (https://linux.die.net/man/1/host)
+
+Dig manuaali: man dig -komento, (https://linux.die.net/man/1/dig)
+
+HINFO "RFC8482": https://datatracker.ietf.org/doc/html/rfc8482
+
+TXT-tietue: https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/
+
 SOA-tietue: https://www.cloudflare.com/learning/dns/dns-records/dns-soa-record/
 
 
