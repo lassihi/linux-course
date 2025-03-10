@@ -38,6 +38,7 @@ Jatkoin työpöydälle ja avasin Calamares Debian GNU/Linux Installerin tuplakli
 Kone käynnistyi uudelleen, joka vei muutaman minuutin. Uudelleenkäynnistyksen jälkeen kirjauduin sisään luomallani käyttäjätunnuksella ja salasanalla. Lopuksi vielä varmistin uudelleen järjestelmän toimivuuden selaamalla nettiä ja katsomalla Youtube-videota.
 
 ## Lähteet
+Linux palvelimet -kurssi ja tehtävänanto: https://terokarvinen.com/linux-palvelimet/
 Raportin kirjoittaminen: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ \
 Free software: https://www.gnu.org/philosophy/free-sw.html \
 Debian ISO image: https://www.debian.org/CD/live/ \
