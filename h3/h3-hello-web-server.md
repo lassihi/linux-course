@@ -115,10 +115,18 @@ curl manuaalin (https://curl.se/docs/manpage.html#-I) mukaan `curl -I` komento n
 **X-XXS-Protection**: Määrittää kuinka selaimiin sisäänrakennettua cross site scripting -filtteriä tulee käyttää. Arvo 0 pakottaa selaimen olemaan käyttämättä filtteriä.
 
 ## Lähteet
-Apache dokumentaatio: https://httpd.apache.org/docs/2.4/vhosts/name-based.html \
-Name based virtual hosts: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ \
-Loki: https://httpd.apache.org/docs/2.4/logs.html \
-HTML5: https://terokarvinen.com/2017/starting-with-javascript-arrays-for-of-f12-console/2012/short-html5-page \
-curl man: https://curl.se/docs/ \
-Cache-Control: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control \
+Linux palvelimet -kurssi ja tehtävänanto: https://terokarvinen.com/linux-palvelimet/
+
+Apache dokumentaatio: https://httpd.apache.org/docs/2.4/vhosts/name-based.html
+
+Name based virtual hosts: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+
+Apache loki: https://httpd.apache.org/docs/2.4/logs.html
+
+HTML5: https://terokarvinen.com/2017/starting-with-javascript-arrays-for-of-f12-console/2012/short-html5-page
+
+curl man: https://curl.se/docs/
+
+Cache-Control: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+
 X-XXS-Protection: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
